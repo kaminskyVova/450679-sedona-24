@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вова Каминский](https://up.htmlacademy.ru/htmlcss/24/user/450679).
-* Наставник: Сергей Зубов.
+* Наставник: [Сергей Зубов.](https://htmlacademy.ru/profile/serj)
 
 ---
 

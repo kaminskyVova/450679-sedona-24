@@ -5,104 +5,77 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo-site.jpg" width="" height="" alt="Лого сайта Седона большая фотка">
+    <nav class="main-navigation">
+        <a class="nav-logo">
+          <img src="img/nav-logo.jpg" width="100" height="200" alt="Лого Седона">
         </a>
-        <ul class="cite-mavigation">
-          <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-          <li><a href="foto&video.html">ФОТО И ВИДЕО</a></li>
-          <li><a href="Map.html">КАРТА ШТАТА</a></li>
-          <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+        <ul class="cite-navigation">
+          <li><a href="info.html">информация</a></li>
+          <li><a href="foto-video.html">фото и видео</a></li>
+          <li><a href="map.html">карта штата</a></li>
+          <li><a href="hotels.html">гостиници</a></li>
         </ul>
-        <ul class="logo-site">
-          <li><a href="index.html">ЛОГО ГОРОДА(фотка в центре nav)</a></li>
-        </ul>
-        <!-- Или вставить лого города в навигации таким образом:
-          <a class="main-nav-logo">
-            <img src="img/nav-logo.jpg" width="" height="" alt="Логотип города">
-          </a> ТАК НАВЕРНО ЛЕЧШЕ? -->
-      </nav>
-    </header>
-    <main class="container">
-    <h1 class="hello">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
-        ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+    </nav>
+    <section class="captions">
+          <img src="img/captions1.jpg" width="100" height="200" alt="надписи1">
+          <img src="img/captions2.jpg" width="100" height="200" alt="надписи2">
+          <img src="img/captions3.jpg" width="100" height="200" alt="надписи3">
+          <img src="img/captions4.jpg" width="100" height="200" alt="надписи4">
+    </section>
+     <h1 class="hello">седона-не большой городок в аризоне,<br>
+        заслуживающий большего!</h1>
       <p class="reasons">Расмотрим 5 причин,по которым седона круче,чем гранд каньен!</p>
-
-    <section class="reason1">
-     <table class="table-reason1">
-       <tr>
-         <td align="centre">НАСТОЯЩИЙ ГОРОДОК</td>
-         <td align="centre" rowspan="3"><a class="table1-foto">
-          <img src="img/table1-foto">ФОТОБ</a></td>
-       </tr>
-       <tr>
-         <td align="centre">-№1-</td>
-       </tr>
-       <tr>
-         <td align="centre">седона-не аееракцион для туристов,
-           там живет своя жизнь</td>
-       </tr>
-     </table>
-    <span class="features">
-      <h2 class="visually-hidden">Преимущества</h2>
-       <ul class="fatures-list">
-         <li class="feature-item">
-           <h3>Жилье</h3>
-            <p>рекомендуем пожить в настоящем мотеле,все какв кино!</p>
-         </li>
-         <li class="feature-item">
-           <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь</p>
-         </li>
-         <li class="feature-item">
-           <h3>Сувениры</h3>
-            <p>Не только китайского,но и местного производства!</p>
-         </li>
-       </ul>
-     </span>
-    </section>
-    <section class="reasons2">
-      <table class="table-reason2">
-        <tr>
-         <td rowspan="3" aline="centre"><a class="table2-foto">
-          <img src="img/table2-foto">Фото</a></td>
-         <td align="centre">там есть мост дьявола</td>
-        </tr>
-        <tr>
-          <td align="centre">-№2-</td>
-        </tr>
-        <tr>
-          <td align="centre">да,по нему можно пройти! если конечно вы осмелитесь</td>
-        </tr>
-      </table>
-      <span class="features2">
-      <h2 class="visually-hidden">Преимущества2</h2>
-       <table class="table-features2">
-        <tr>
-         <th align="centre">небольшая площадь</th>
-         <th align="centre">красивая дорога</th>
-         <th align="centre">мало туристов</th> 
-        </tr> 
-        <tr>
-         <td align="centre">-№3-</td>
-         <td align="centre">-№4-</td>
-         <td align="centre">-№5-</td> 
-        </tr>
-        <tr>
-         <td align="centre">все достопримечательности находятся близко</td>
-         <td align="centre">ехать в седону из лас-вегаса совсем не скучно!</td>
-         <td align="centre">большинство едет в гранд каньен и толпится там</td> 
-        </tr>
-       </table>
-     </span>
-    </section>
-    <h2 class="col-to-do">заинтересовались?</h2>
-    <p class="col-to-do">укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    </main>
-    <footer>
-
+<section class="reason1">
+     <div class="taxt-reason1">
+         <h3>настоящий городок</h3>
+         <span>-№1-</span> <!--вот тут ни понял почему <span> а потоп <p> -->
+         <p>Седона не атракцион для туристов,там течет своя жизнь</p>
+     </div>
+     <div class="reason1-img"> 
+        <img src="img/reason1.jpg" width="100" height="200" alt="Седона не аттракцион">
+     </div>
+ </section>
+ <section class="adge">
+    <div class="edge-wrap">
+      <img src="img/house.png" alt="жилье">
+      <b>Жилье</b>
+      <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    </div>
+    <div class="edge-wrap">
+      <img src="img/eat.png" alt="Еда">
+      <b>Еда</b>
+      <p>Всегда заказывая фирменый бургер вы не разочаруетесь!</p>
+    </div>
+    <div class="edge-wrap">
+      <img src="img/gifts.png" alt="Сувениры">
+      <b>Сувениры</b>
+      <p>Не только китайского но и местного производства!</p>
+    </div> 
+</section>
+<section class="reason2">
+    <div class="reason2-img"> 
+        <img src="img/reason2.jpg" width="100" height="200" alt="Да по нему можно пройти!">
+     </div>
+     <div class="taxt-reason2">
+         <h3>Там есть мост дьявола</h3>
+         <span>-№2-</span> 
+         <p>Да,по нему можно пройти! если конечно осмелитесь</p>
+     </div>
+ </section>
+       <h2 class="interest">заинтересовались?</h2>
+       <p class="common">укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <footer class="main-footer">
+      <p>
+       <img src="img/heshteg.jpg" width="100" height="200" alt="heshteg">хештег 
+      </p>
+        <ul class="foter-sociale">
+          <li><a class="social-button" href="#">твитер</a></li>
+          <li><a class="social-button" href="#">фейсбук</a></li>
+          <li><a class="social-button" href="#">ютуб или че это</a></li>
+        </ul>
+      <p>
+       <img src="img/logo-academy.jpg" width="100" height="200" alt="htmlAcademy">лого 
+      </p>
     </footer>
   </body>
-</html>
+ </html>

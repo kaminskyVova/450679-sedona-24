@@ -7,7 +7,7 @@
     <body>
         <nav class="main-navigation">
             <a href="index.html" class="nav-logo">
-                <img src="img/logo-sedona.svg" width="140px" height="72px" alt="Лого Седона">
+                <img src="img/logo-sedona.svg" width="140px" height="72px" alt="Ссылка на сайт города Седона">
             </a>
             <ul class="cite-navigation">
                 <li><a href="info.html">информация</a></li>
@@ -39,19 +39,19 @@
         </section>
         <section class="edge">
             <div class="edge-icon">
-                <img src="img/icon-1.svg" width="75px" height="72px" alt="icon-1">
+                <img src="img/icon-1.svg" width="75px" height="72px" alt="Жилье">
             <div class="edge-text">
                 <b>Жилье</b>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             </div>
             <div class="edge-wrap">
-                <img src="img/icon-2.svg" width="74px" height="70px" alt="icon-2">
+                <img src="img/icon-2.svg" width="74px" height="70px" alt="Еда">
                 <b>Еда</b>
                 <p>Всегда заказывая фирменый бургер вы не разочаруетесь!</p>
             </div>
             <div class="edge-wrap">
-            <img src="img/icon-3.svg" width="64px" height="76px" alt="icon-3">
+            <img src="img/icon-3.svg" width="64px" height="76px" alt="Сувениры">
             <b>Сувениры</b>
             <p>Не только китайского но и местного производства!</p>
             </div> 
@@ -71,28 +71,45 @@
         <div class="map">
           <img src="img/map.jpg" width="1200px" height="594px" alt="map">
         </div>
+        <form action="#" method="get">
+          <lable for="hotel-searh"> 
+            <buttom class="hotel-search">
+              <input id="hotel-search" type="submit" value="Поиск гостиниц в Седоне">
+            </buttom>
+          </lable> 
+        </form>
         <footer class="main-footer">
             <p>
                 <a class="sedona" href="http://www.sedonaaz.gov">
-                <span><b>#visitsedona</b></span></a>
+                <span><b>#visitsedona</b></span></a><!--ссылка или просто текст?-->
             </p>
             <ul class="foter-sociale"> 
               <!--каждый квадратик ссимволом это ни div?-->
                 <li><a class="social-button" href="http://www.twitter.com"> 
-                  <img src="img/twitter.svg" alt="twitter" width="46px" height="48px"></a> 
+                  <img src="img/twitter.svg" alt="Мы в твитере" width="46px" height="48px"></a> 
                 </li>
                 <li><a class="social-button" href="http://www.facebook.com">
-                  <img src="img/facebook.svg" alt="facebook" width="46px"></a>
+                  <img src="img/facebook.svg" alt="Мы на Фейсбук" width="46px"></a>
                 </li>
                 <li><a class="social-button" href="http://www.youtube.com">
-                  <img src="img/youtube.svg" alt="youtube" width="46px" height="48px"></a> 
+                  <img src="img/youtube.svg" alt="Наш канал на Ютубе" width="46px" height="48px"></a> 
                 </li>
                 <!-- рисунки иконок соцсетей пустые на хрен-->
             </ul>
             <p>
                 <span>Website by</span>
-                <a href="https://htmlacademy.ru/profession/frontender"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="HtmlAcademy"></a>
+                <a href="https://htmlacademy.ru/profession/frontender"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Интерактивный курс академии"></a>
             </p>
         </footer>
-    </body>
+    </body>                    
 </html>
+                         <!-- Форма для поиска гостиниц (выпадающее окно)
+                           <label for="in"> 
+                            Дата заезда:<input id="in" type="text" name="date" value="24 апреля 2017"> 
+                           </label>
+                           <label for="out"> 
+                            Дата выезда:<input id="out" type="text" name="date" value="4 июля 2017"> 
+                           </label>
+                           <batton class="search">
+                           <input type="submit" value="найти">
+                           </batton>

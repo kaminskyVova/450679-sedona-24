@@ -20,23 +20,26 @@
         <div class="background-reserv">
             <img src="img/background2.jpg" width="1200px" height="500px"  alt="filter"><!--чет здоровая 1200/800-->
           </div>
-        <div class="wide-selection">
-            <form class="infostructure">
+        <form class="wide-selection" method="post">
+            <div class="infostructure">
                     Инфроструктура:<br>
-                <input id="pl" type="checkbox" name="12" value="pool"> <label for="pl">Бассейн</label><br>
-                <input id="par"  type="checkbox" name="12" value="parking"> <label for="par">Парковка</label><br>
-                <input id="wif"  type="checkbox" name="12" value="Wi-Fi"><label for="wif">Wi-Fi</label><br>
-            </form>
-            <form class="type housing">
+                <input id="pl" type="checkbox" name="бассейн"><label for="pl">Бассейн</label><br>
+                <input id="par"  type="checkbox" name="парковка"><label for="par">Парковка</label><br>
+                <input id="wif"  type="checkbox" name="wi-fi"><label for="wif">Wi-Fi</label><br>
+            </div>                                                  <!--br убрать! -->
+            <div class="type housing">
                     Тип жилья:<br>
-                <input id="htl" type="checkbox" name="12" value="hotels"> <label for="htl">Гостиница</label><br>
-                <input id="hstl"  type="checkbox" name="12" value="hostel"> <label for="hstl">Отель</label><br>
-                <input id="aprt"  type="checkbox" name="12" value="apartment"><label for="aprt">Апартаменты</label><br>
-            </form>
-        <form class="price">
-            <!--Выбор по цене-->
-        </form>
+                <input id="htl" type="checkbox" name="гостиница"> <label for="htl">Гостиница</label><br>
+                <input id="hstl"  type="checkbox" name="отель"> <label for="hstl">Отель</label><br>
+                <input id="aprt"  type="checkbox" name="апартаменты"><label for="aprt">Апартаменты</label><br>
+            </div>
+        <div class="choice-price">
+            стоимость в сутки(р)<br>
+            <span></span>
+            <label for="price">от 0 до 3000</label>
+            <input type="range" id="price" name="диапозон цен" min="0" max="3000" step="100"> 
         </div>
+        </form>
         <section class="selection">
             <div class="separation">
                  Найдено:
@@ -49,8 +52,10 @@
                         <div class="amara">
                             <h3>Amara Resort & Spa</h3>
                             <span>Гостиница от 4000 р</span><br>
-                            <a class="detail" href="#">Подробнее</a>
-                            <a class="reserv" href="#">Забронировать</a>
+                            <form class="reserv" action="#" method="post">
+                              <a class="detail" href="#">Подробнее</a>
+                              <button type="submit">Забронировать</button>
+                            </form>
                         </div>
                         <div class="star1">
                             <img src="img/star.svg" width="18px" height="17px" alt="star">
@@ -67,8 +72,10 @@
                         <div class="desert">
                             <h3>Desert Quail INN</h3>
                             <span>Мотель от 3000 р</span><br>
-                            <a class="detail" href="#">Подробнее</a>
-                            <a class="reserv" href="#">Забронировать</a>
+                            <form class="reserv" action="#" method="post">
+                              <a class="detail" href="#">Подробнее</a>
+                              <button type="submit">Забронировать</button>
+                            </form>
                         </div>
                         <div class="stars2">
                             <img src="img/star.svg" width="18px" height="17px" alt="star">

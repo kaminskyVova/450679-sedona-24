@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Hotel reservation</title>
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize">
+    <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
         <nav class="main-navigation">
@@ -18,8 +20,8 @@
             </ul>
         </nav>
         <div class="background-reserv">
-            <img src="img/background2.jpg" width="1200px" height="500px"  alt="filter"><!--чет здоровая 1200/800-->
-          </div>
+          <img src="img/background2.jpg" width="1200px" height="500px"  alt="filter"><!--чет здоровая 1200/800-->
+        </div>
         <form class="wide-selection" method="post">
             <div class="infostructure">
                    <b>Инфроструктура:</b>
@@ -35,7 +37,6 @@
             </div>
         <div class="choice-price">
             стоимость в сутки(р)<br>
-            <span></span>
             <label for="price">от 0 до 3000</label>
             <input type="range" id="price" name="диапозон цен" min="0" max="3000" step="100"> 
         </div>
@@ -50,9 +51,9 @@
                             <img src="img/amara.jpg" width="135px" height="90px" alt="amarapng">
                         </div>
                         <div class="amara">
-                            <h3>Amara Resort & Spa</h3>
-                            <span>Гостиница</span> <!-- span подходит или другое? может отдельно еще в div?-->
-                            <sapn>от 4000 р</span>
+                            <h2>Amara Resort & Spa</h2>
+                            <span class="hotel">Гостиница</span> 
+                            <sapn class="price">от 4000 р</span>
                             <a class="detail" href="#">Подробнее</a>
                             <a class="reserv" href="#">Забронировать</a>
                         </div>
@@ -69,9 +70,9 @@
                             <img src="img/desert.jpg" width="135px" height="90px" alt="Desert">
                         </div>
                         <div class="desert">
-                            <h3>Desert Quail INN</h3>
-                            <span>Мотель</span>
-                            <span>от 3000 р</span>
+                            <h2>Desert Quail INN</h2>
+                            <span class="hotel">Мотель</span>
+                            <span class="price">от 3000 р</span>
                             <a class="detail" href="#">Подробнее</a>
                             <a class="reserv" href="#">Забронировать</a>
                         </div>
@@ -87,9 +88,9 @@
                             <img src="img/villas.jpg" width="135px" height="90px" alt="Vilas">
                         </div>
                         <div class="villas">
-                            <h3>Villas at poco diablo</h3>
-                            <span>Апартаменты</span>
-                            <span>от 2000 р</span>
+                            <h2>Villas at poco diablo</h2>
+                            <span class="hotel">Апартаменты</span>
+                            <span class="price">от 2000 р</span>
                             <a class="detail" href="#">Подробнее</a>
                             <a class="reserv" href="#">Забронировать</a>
                         </div>

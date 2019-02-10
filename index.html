@@ -3,35 +3,43 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700&amp;subset=cyrillic" 
+              rel="stylesheet">
         <link rel="stylesheet" href="css/normalize">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <nav class="main-navigation">
-            <a href="index.html" class="nav-logo">
-                <img src="img/logo-sedona.svg" width="140px" height="72px" alt="Ссылка на сайт города Седона">
-            </a>
+            <!--<div class="logo">
+                <a href="index.html">
+                    <img src="img/logo-sedona.svg" width="140px" height="72px" alt="Ссылка на сайт города Седона">
+                </a>-->
+            </div>
             <ul class="cite-navigation">
-                <li><a href="info.html">информация</a></li>
-                <li><a href="foto-video.html">фото и видео</a></li>
-                <li><a href="map.html">карта штата</a></li>
-                <li><a href="hotels.html">гостиници</a></li>
-            </ul>
+                <li class="nav"><a href="info.html">информация</a></li>
+                <li class="nav"><a href="foto-video.html">фото и видео</a></li>
+                <li><a href="index.html">
+                    <img src="img/logo-sedona.svg" width="140px" height="72px" alt="Ссылка на сайт города Седона">
+                </li></a>
+                <li class="nav"><a href="map.html">карта штата</a></li>
+                <li class="nav"><a href="hotels.html">гостиници</a></li>
+            </ul>  
         </nav>
         <section class="welcom">
             <div class="back-photo">
-              <img src="img/background_photo.jpg" width="1200px" height="800px"  alt="background-photo">
+                <img src="img/background_photo.jpg" width="1200px" height="800px"  alt="background-photo">
             </div>
-            <div class="welcome-photo">
-              <img src="img/intro-welcome.svg" width="459px" height="353" alt="welcome">
-            </div>
+            <!--<div class="welcome-photo">
+                <img src="img/intro-welcome.svg" width="459px" height="353" alt="welcome">
+            </div>-->
+            <div class="mask">
+                <img src="img/intro-mask.svg" width="1200px" height="59px" alt="mask">
         </section>
-        <span class="hello">
+        <div class="hello">
             <h1>седона-не большой городок в аризоне,<br>
                 заслуживающий большего!</h1>
             <p class="reasons">Расмотрим 5 причин,по которым седона круче,чем гранд каньен!</p>
-        </span>
+        </div>
         <section class="reason1">
             <div class="taxt-reason1">
                 <h3>настоящий городок</h3>
@@ -42,11 +50,11 @@
                 <img src="img/photo1.jpg" width="800px" height="256px" alt="photo1">
             </div>
         </section>
-        <section class="enterteimants">
-            <div class="icon1">
-                <img src="img/icon-1.svg" width="75px" height="72px" alt="Жилье">
-            </div>
+        <div class="enterteimants">
             <div class="hausing">
+                <img src="img/icon-1.svg" width="75px" height="72px" alt="Жилье">
+           <!-- </div>
+            <div class="hausing">-->
                 <b>Жилье</b>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
@@ -64,7 +72,7 @@
                 <b>Сувениры</b>
                 <p>Не только китайского но и местного производства!</p>
             </div> 
-        </section>
+        </div>
         <section class="edge2">
             <div class="edge2-img"> 
                 <img src="img/photo2.jpg" width="800px" height="256px" alt="photo2">
@@ -75,7 +83,7 @@
                 <p>Да,по нему можно пройти! если конечно осмелитесь</p>
             </div>
         </section>
-        <section class="reason2">
+        <div class="reason2">
             <div class="edge3">
                 <h2>небольшая площадь</h2>
                 <b>-№3-</b>
@@ -91,7 +99,7 @@
                 <b>-№5-</b>
                 <p>большинство едет в гранд каньон<br>и толпится там</p>
             </div> 
-        </section>
+        </div>
         <span class="hello2">
             <h2 class="interest">заинтересовались?</h2>
             <p class="common">укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>

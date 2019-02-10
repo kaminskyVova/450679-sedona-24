@@ -68,6 +68,13 @@ li {
 	color: #b2b2b2;
 }
 
+.welcom {
+  width: 1200px;
+  height: 510px;
+  background-image: url("img/background_photo.jpg");
+}
+
+
 .hello,
 .hello2 {
   width: 1200px;
@@ -164,4 +171,14 @@ li {
 .reason2{
   display: flex;
   justify-content:space-between;
+}
+
+.flex {
+  display: flex;
+
+}
+
+.mask {
+  display:flex;
+  flex-direction: row-reverse;
 }

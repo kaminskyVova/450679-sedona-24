@@ -69,9 +69,12 @@ li {
 }
 
 .welcom {
+  background-image: url("img/background_photo.jpg");
+}
+
+.flex {
   width: 1200px;
   height: 510px;
-  background-image: url("img/background_photo.jpg");
 }
 
 
@@ -93,10 +96,9 @@ li {
 	color: #ffffff;
 }
 
-.enterteimants{
-  width: 400px;
-  height: 256px;
-  text-align: center;
+.enterteimants{ 
+  width: 1200px;
+  height: 330px;
 }
 .reason2 {
   width:1200px;
@@ -167,18 +169,42 @@ li {
 
 .reason1,
 .edge2,
-.enterteimants,
-.reason2{
+.reason2 {
   display: flex;
   justify-content:space-between;
 }
 
 .flex {
   display: flex;
+}
+
+.welcome-photo {
+  display: flex;
+  align-items: center;
+  justify-content:center;
 
 }
+
 
 .mask {
   display:flex;
   flex-direction: row-reverse;
+}
+
+.enterteimants {
+  display: flex;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  display:flex;
+  justify-content:space-between;
+}
+
+.hausing,
+.food,
+.suvenirs {
+  display: flex;
+  justify-content: center;
 }

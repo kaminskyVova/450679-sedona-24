@@ -1,15 +1,11 @@
 body {
-	margin:35px;
-	width: 1200px;
-	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-
-
-	font-family: "PT Sans", Arial;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #333333;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 26px;
 	text-transform: uppercase;
+
 
 	background-color: #ffffff;
 	background-position: top center;
@@ -18,8 +14,8 @@ body {
 
 h1, h2 {
 	color: #000000;
-	font-family: "PT Sans";
-	font-size: 21px;
+	font-family: "PT Sans"; sans-serif;
+	font-size: 23px;
 	font-weight: 700;
 	line-height: 36px;
 }
@@ -32,7 +28,7 @@ a {
 
 p {
 	color: #333333;
-	font-family: "PT Sans";
+	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 26px;
@@ -45,6 +41,11 @@ ul {
 
 li {
   width: 239px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
 }
 
 .main-navigation {
@@ -68,8 +69,22 @@ li {
 	color: #b2b2b2;
 }
 
-.welcom {
-  background-image: url("img/background_photo.jpg");
+.welcome {
+  position: relative;
+  background: url(../img/photo.jpg) no-repeat;
+  padding-top: 77px;
+  padding-bottom: 80px;
+  text-align: center;
+  }
+
+.welcome:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  content: '';
+  background: url(../img/intro-mask.svg) no-repeat center;
 }
 
 .flex {
@@ -81,8 +96,15 @@ li {
 .hello,
 .hello2 {
   width: 1200px;
-  padding: 50px;
+  height: 290px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 	text-align: center;
+}
+
+.text,
+.text2 {
+  padding: 380px 65px 380px 55px;
 }
 
 .taxt-reason1,
@@ -96,7 +118,7 @@ li {
 	color: #ffffff;
 }
 
-.enterteimants{ 
+.enterteimants{
   width: 1200px;
   height: 330px;
 }
@@ -120,6 +142,8 @@ li {
 #hotel-search {
 	width: 568px;
 	height: 86px;
+  margin-left: 316px;
+  margin-right: 316px;
 	background-color: #766357;
 
 	color: #ffffff;
@@ -152,6 +176,66 @@ li {
 	line-height: 21px;
 	text-transform: uppercase;
 }
+
+.footer {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+ }
+
+.sociale,
+.academy,
+.visit {
+  width: 370px;
+  margin: 0 auto;
+  padding: 50px;
+  width: 415px;
+  height: 120px;
+ }
+
+.sedona {
+  width: 136px;
+  height: 16px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+ }
+
+.footer-sociale {
+  width: 155px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.sociale {
+  width: 150px;
+  height: 48px;
+ }
+
+.social-button {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+ }
+
+
+.website {
+  width: 197px;
+  height: 41px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+ }
+
+
 
 /* CSS Flexbox */
 
@@ -199,7 +283,8 @@ li {
 .icon2,
 .icon3 {
   display:flex;
-  justify-content:space-between;
+  align-content: center;
+  justify-content:center;
 }
 
 .hausing,
@@ -208,3 +293,26 @@ li {
   display: flex;
   justify-content: center;
 }
+
+.footer-sociale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* reservation.html */
+
+.hotel-list {
+ width: 1200px;
+ height: 450px;
+}
+
+.amara-list,
+.desert-list,
+.vallas-list {
+  width: 1200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+

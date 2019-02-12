@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+      <div class="wrapper">
         <nav class="main-navigation">
             <!--<div class="logo">
                 <a href="index.html">
@@ -24,23 +25,17 @@
                 <li class="nav"><a href="hotels.html">гостиницы</a></li>
             </ul>  
         </nav>
-        <section class="welcom">
-            <div class="flex">
-                <!--<div class="back">
-                    <img src="img/background_photo.jpg" width="1200px" height="510px"  alt="background-photo">
-                </div>-->
-                <div class="welcome-photo">
-                    <img src="img/intro-welcome.svg" width="459px" height="353" alt="welcome">
-                </div>
-                <div class="mask">
-                    <img src="img/intro-mask.svg" width="1200px" height="59px" alt="mask">
-                </div>
-            </div>    
+        <section class="welcome">
+                    <img src="img/intro-welcome.svg" width="459px" height="353" alt="фото с надписями">
+                <!--<div class="mask">
+                    <img src="img/intro-mask.svg" width="1200px" height="59px" alt="окантовка">
+                </div>-->  
         </section>    
-        </div>
         <div class="hello">
+          <span class="text">
             <h1>седона - небольшой городок в аризоне,<br>заслуживающий большего!</h1>
             <p class="reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньен!</p>
+          </span>
         </div>
         <section class="reason1">
             <div class="taxt-reason1">
@@ -103,36 +98,42 @@
                 <p>большинство едет в гранд каньон<br>и толпится там</p>
             </div> 
         </div>
-        <span class="hello2">
+        <div class="hello2">
+          <span class="text2">
             <h2 class="interest">заинтересовались?</h2>
             <p class="common">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </span>
+          </span>
         <form action="#" method="get">
             <input id="hotel-search" type="submit" value="Поиск гостиниц в Седоне"> 
         </form>
         <div class="map">
             <img src="img/map.jpg" width="1200px" height="594px" alt="map">
         </div>
-        <footer class="main-footer">
-            <p>
+        <foter class="main-footer">
+          <div class="footer">
+            <div class="visit">
                 <a class="sedona" href="http://www.sedonaaz.gov">
                 <span><b>#visitsedona</b></span></a>
-            </p>
-            <ul class="foter-sociale"> 
+            </div>
+            <div class="sociale">
+            <ul class="footer-sociale"> 
                 <li><a class="social-button" href="http://www.twitter.com"> 
                     <img src="img/twitter.svg" alt="Мы в твитере" width="46px" height="48px"></a> 
                 </li>
                 <li><a class="social-button" href="http://www.facebook.com">
-                    <img src="img/facebook.svg" alt="Мы на Фейсбук" width="46px"></a>
+                    <img src="img/facebook.svg" alt="Мы на Фейсбук" width="46px" height="48px"></a>
                 </li>
                 <li><a class="social-button" href="http://www.youtube.com">
                     <img src="img/youtube.svg" alt="Наш канал на Ютубе" width="46px" height="48px"></a> 
                 </li>
             </ul>
-            <p>
+            </div>
+            <div class="academy">
                 <span class="website">Website by</span>
                 <a href="https://htmlacademy.ru/profession/frontender"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Интерактивный курс академии"></a>
-            </p>
+            </div>
+          </div>
         </footer>
+      </div>  
     </body>                    
 </html>

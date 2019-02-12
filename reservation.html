@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
+      <div class="wrapper">
        <nav class="main-navigation">
             <ul class="cite-navigation">
                 <li class="nav"><a href="info.html">информация</a></li>
@@ -46,10 +47,11 @@
             </div>-->
                 <ul class="hotels-list">
                     <li class="amara-list">
+                      <div class="list">
                         <div class="amara-img">
                             <img src="img/amara.jpg" width="135px" height="90px" alt="amarapng">
                         </div>
-                        <div class="amara">
+                        <div class="amara-text">
                             <h2>amara resort & spa</h2>
                             <span class="hotel">гостиница</span> 
                             <sapn class="price">от 4000 р</span>
@@ -63,8 +65,10 @@
                             <img src="img/star.svg" width="18px" height="17px" alt="star">
                             <span>יрейтинг 8,5</span>
                         </div>
+                      </div>
                     </li>
-                    <li class="desert-list">    
+                    <li class="desert-list">
+                      <div class="list">  
                          <div class="desert-img">
                             <img src="img/desert.jpg" width="135px" height="90px" alt="Desert">
                         </div>
@@ -81,8 +85,10 @@
                             <img src="img/star.svg" width="18px" height="17px" alt="star">
                             <span>рейтинг 8,9</span>
                         </div>
+                      </div>
                     </li>
                     <li class="villas-list">
+                      <div class="list">
                         <div class="villas-img">
                             <img src="img/villas.jpg" width="135px" height="90px" alt="Vilas">
                         </div>
@@ -98,30 +104,33 @@
                             <img src="img/star.svg" width="18px" height="17px" alt="star">
                             <span>рейтинг 9,2</span>
                         </div>
+                      </div>
                     </li>
                 </ul>
-            <footer class="main-footer">
-              <p>
-                  <a class="sedona" href="http://www.sedonaaz.gov">
-                  <span><b>#visitsedona</b></span></a><!--ссылка или просто текст?-->
-              </p>
-              <ul class="foter-sociale"> 
-                <!--каждый квадратик ссимволом это ни div?-->
+             <div class="footer">
+            <div class="visit">
+                <a class="sedona" href="http://www.sedonaaz.gov">
+                <span><b>#visitsedona</b></span></a>
+            </div>
+            <div class="sociale">
+            <ul class="footer-sociale"> 
                 <li><a class="social-button" href="http://www.twitter.com"> 
-                  <img src="img/twitter.svg" alt="twitter" width="46px" height="48px"></a> 
+                    <img src="img/twitter.svg" alt="Мы в твитере" width="46px" height="48px"></a> 
                 </li>
                 <li><a class="social-button" href="http://www.facebook.com">
-                  <img src="img/facebook.svg" alt="facebook" width="46px"></a>
+                    <img src="img/facebook.svg" alt="Мы на Фейсбук" width="46px" height="48px"></a>
                 </li>
                 <li><a class="social-button" href="http://www.youtube.com">
-                  <img src="img/youtube.svg" alt="youtube" width="46px" height="48px"></a> 
+                    <img src="img/youtube.svg" alt="Наш канал на Ютубе" width="46px" height="48px"></a> 
                 </li>
-                <!-- рисунки иконок соцсетей пустые на хрен-->
-              </ul>
-              <p>
-                <span>Website by</span>
-                <a href="https://htmlacademy.ru/profession/frontender"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="HtmlAcademy"></a>
-              </p>
+            </ul>
+            </div>
+            <div class="academy">
+                <span class="website">Website by</span>
+                <a href="https://htmlacademy.ru/profession/frontender"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Интерактивный курс академии"></a>
+            </div>
+          </div>
         </footer>
+      </div>
     </body>
 </html>

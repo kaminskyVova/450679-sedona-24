@@ -39,13 +39,25 @@ ul {
   list-style: none;
 }
 
-li {
+.nav li {
   width: 239px;
+}
+
+.text-list li {
+  width: 252px;
+}
+
+.text-list2 li {
+  width: 150px;
 }
 
 .wrapper {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 0 auto;
 }
 
 .main-navigation {
@@ -79,6 +91,7 @@ li {
 
 .welcome:after {
   position: absolute;
+  margin-bottom: 0 auto;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -96,19 +109,15 @@ li {
 .hello,
 .hello2 {
   width: 1200px;
-  height: 290px;
+  height: 150px;
   padding-top: 56px;
   padding-bottom: 56px;
 	text-align: center;
 }
 
-.text,
-.text2 {
-  padding: 380px 65px 380px 55px;
-}
 
 .taxt-reason1,
-.edge2-text  {
+.reason2-text  {
   margin: 0;
 	width: 400px;
   height: 256px;
@@ -118,18 +127,33 @@ li {
 	color: #ffffff;
 }
 
-.enterteimants{
+.enterteimants,
+.enterteimants2 {
   width: 1200px;
-  height: 330px;
 }
+
+.enterteimants2 {
+  background-color: #eeeeee;
+}
+
+.list1,
+.list2 {
+  width: 1060px;
+}
+
+/*.reason1,
 .reason2 {
+  margin-bottom: 0 auto;
+}*/
+
+/*.reason2 {
   width:1200px;
   height: 330px;
   text-align: center;
   background-color: #eeeeee;
-}
+}*/
 
-.edge3,
+/*.edge3,
 .edge4,
 .edge5, {
 	background-color: #eeeeee;
@@ -137,7 +161,7 @@ li {
 	height: 256px;
 
 	text-align: center;
-}
+}*/
 
 #hotel-search {
 	width: 568px;
@@ -243,13 +267,13 @@ li {
 .cite-navigation{
   display: flex;
   justify-content: space-between;
-  align-content: center;
-}
-
-.nav {
-  display: flex;
   align-items: center;
 }
+
+/*.nav {
+  display: flex;
+  align-items: center;
+}*/
 
 .reason1,
 .edge2,
@@ -262,30 +286,45 @@ li {
   display: flex;
 }
 
-.welcome-photo {
+.list1,
+.list2 {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content:center;
-
+  justify-content: space-between;
 }
 
+/*.text-list1,
+.text-list2 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}*/
 
-.mask {
+/* .welcome-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content:center; 
+
+}*/
+
+/*.mask {
   display:flex;
   flex-direction: row-reverse;
-}
+}*/
 
 .enterteimants {
   display: flex;
 }
 
-.icon1,
+/*.icon1,
 .icon2,
 .icon3 {
   display:flex;
   align-content: center;
   justify-content:center;
-}
+}*/
 
 .hausing,
 .food,
@@ -313,18 +352,16 @@ li {
 .hotel-list {
   width: 1100px;
   height: 400px;
-  padding-right: 71px;
-  padding-left: 71px;
 }
 
-.amara-list,
+/*.amara-list,
 .desert-list,
 .villas-list {
   width: 1200px;
   height: 150px;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
 .amara-img,
 .desert-img,
@@ -349,3 +386,12 @@ li {
  margin-right: 74px;
 }
 
+/* reservation flex */
+
+.hotel-list {
+  display: flex;
+}
+
+.list3 {
+  
+}

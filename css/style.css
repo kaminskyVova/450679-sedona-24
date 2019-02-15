@@ -88,11 +88,11 @@ ul {
 }
 
 .logo {
-  width: 240px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .welcome {
@@ -215,10 +215,14 @@ ul {
 	text-transform: uppercase;
 }
 
-.footer {
-  display: flex;
-  width: 1200px;
-  height: 120px;
+.footer-map {
+  position: relative;
+ }
+
+ .footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255,255,255, 0,9);
  }
 
 .sociale,
@@ -350,6 +354,12 @@ ul {
   justify-content: center;
 }
 
+.footer {
+ display: flex; 
+  
+}
+
+
 .footer-sociale {
   display: flex;
   justify-content: center;
@@ -361,10 +371,7 @@ ul {
 
 /* reservation.html */
 
-.conteiner {
- width: 1200px;
  
-}
 
 .hotel-list {
   width: 1100px;
@@ -380,14 +387,14 @@ ul {
   justify-content: space-between;
 }*/
 
-.amara-img,
+/*.amara-img,
 .desert-img,
 .villas-img {
   float: right;
-  /*margin: 30px;*/
-}
+  /*margin: 30px;
+}*/
 
-.amara-text,
+/*.amara-text,
 .desert-text,
 .villas-text {
   float: right;
@@ -401,11 +408,22 @@ ul {
 
 .amara-list {
  margin-right: 74px;
-}
+}*/
 
 /* reservation flex */
 
-.conteiner {
+.hotel-list {
+  width: 1200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-list {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -413,8 +431,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-.hotel-list{
 
 }
 

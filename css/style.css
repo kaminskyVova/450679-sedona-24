@@ -105,13 +105,14 @@ ul {
 
 .welcome:after {
   position: absolute;
-  margin-bottom: 0 auto;
+  /*margin-bottom: 0 auto;*/
   left: 0;
   bottom: 0;
   width: 100%;
   height: 60px;
   content: '';
   background: url(../img/intro-mask.svg) no-repeat center;
+  margin-bottom: -5px;
 }
 
 .flex {
@@ -141,6 +142,10 @@ ul {
 	color: #ffffff;
 }
 
+.reason2 {
+  margin-bottom: -25px;
+}
+
 .enterteimants,
 .enterteimants2 {
   width: 1200px;
@@ -153,6 +158,8 @@ ul {
 .list1,
 .list2 {
   width: 1060px;
+  height: 250px;
+  text-align: center;
 }
 
 /*.reason1,
@@ -220,19 +227,30 @@ ul {
  }
 
  .footer {
+  height: 120px;
   position: absolute;
   bottom: 0;
-  background-color: rgba(255,255,255, 0,9);
+  background-color:#fdfdfd;
+  opacity: 0.9;
  }
 
-.sociale,
-.academy,
+
 .visit {
   width: 370px;
-  margin: 0 auto;
   padding: 50px;
   width: 415px;
-  height: 120px;
+  margin-left: 100px;
+ }
+
+ .academy {
+  padding: 50px;
+   margin-right: 100px;
+ }
+
+ /*.sociale {
+   padding-top: 50px;
+   padding-bottom: 35px;
+   margin: auto;*/
  }
 
 .sedona {
@@ -248,10 +266,21 @@ ul {
   text-transform: uppercase;
  }
 
+.footer {
+  width: 100%;
+
+}
+
 .footer-sociale {
+  padding-top: 30px;
+  margin: auto;
   width: 155px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+ /* margin-left: auto;
+  margin-right: auto; */
  }
 
 .sociale {
@@ -362,7 +391,7 @@ ul {
 
 .footer-sociale {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -412,7 +441,7 @@ ul {
 
 /* reservation flex */
 
-.hotel-list {
+/*.hotel-list {
   width: 1200px;
   height: 150px;
   display: flex;
@@ -421,19 +450,51 @@ ul {
   align-content: flex-start;
   margin: 0;
   padding: 0;
-}
+}*/
 
 .hotel-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.choice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer-reserv {
+  display: flex;
+  height: 120px;
+  bottom: 0;
+  background-color:#fdfdfd;
+ }
+
+ .footer-list {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  /*align-items: center;*/
-  margin: 0;
-  padding: 0;
-}
+  align-items: center;
+  padding-top: 30px;
+  margin: auto;
+  width: 155px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+ }
 
-}
 
-.list3 {
-  
-}
+.visit-reserv {
+  width: 370px;
+  padding: 50px;
+  width: 415px;
+  margin-left: 100px;
+ }
+
+ .academy-reserv {
+  padding: 50px;
+  margin-right: 100px;
+ }

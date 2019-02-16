@@ -45,7 +45,6 @@ ul {
 }
 
 .cite-navigation li:nth-child(2) { margin-right: auto };
-/*.cite-navigation li:nth-child(3) { margin-left: auto };*/
 
 .text-list li {
   width: 252px;
@@ -105,7 +104,6 @@ ul {
 
 .welcome:after {
   position: absolute;
-  /*margin-bottom: 0 auto;*/
   left: 0;
   bottom: 0;
   width: 100%;
@@ -162,27 +160,6 @@ ul {
   text-align: center;
 }
 
-/*.reason1,
-.reason2 {
-  margin-bottom: 0 auto;
-}*/
-
-/*.reason2 {
-  width:1200px;
-  height: 330px;
-  text-align: center;
-  background-color: #eeeeee;
-}*/
-
-/*.edge3,
-.edge4,
-.edge5, {
-	background-color: #eeeeee;
-	width: 400px;
-	height: 256px;
-
-	text-align: center;
-}*/
 
 #hotel-search {
 	width: 568px;
@@ -201,7 +178,7 @@ ul {
 .detail {
 	background-color: #81b3d2;
 	width: 110px;
-	height: 27px;
+	height: 30px;
 
 	color: #ffffff;
 	font-size: 14px;
@@ -212,7 +189,7 @@ ul {
 
 .reserv {
 	width: 142px;
-	height: 27px;
+	height: 30px;
 	background-color: #766357;
 
 	color: #ffffff;
@@ -244,16 +221,11 @@ ul {
 
  .academy {
   padding: 50px;
-   margin-right: 100px;
+  margin-left: 130px;
  }
 
- /*.sociale {
-   padding-top: 50px;
-   padding-bottom: 35px;
-   margin: auto;*/
- }
-
-.sedona {
+ 
+.sitesedona {
   width: 136px;
   height: 16px;
   padding-top: 50px;
@@ -262,6 +234,17 @@ ul {
   font-family: "PT Sans";
   font-size: 21px;
   font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+ }
+
+ .website {
+  width: 197px;
+  height: 41px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
  }
@@ -279,8 +262,6 @@ ul {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
- /* margin-left: auto;
-  margin-right: auto; */
  }
 
 .sociale {
@@ -292,18 +273,6 @@ ul {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
- }
-
-
-.website {
-  width: 197px;
-  height: 41px;
-  color: #000000;
-  font-family: "PT Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: uppercase;
  }
 
 
@@ -320,20 +289,12 @@ ul {
   padding: 0;
 }
 
-/*.nav {
-  display: flex;
-  align-items: center;
-}*/
 
 .reason1,
 .edge2,
 .reason2 {
   display: flex;
   justify-content:space-between;
-}
-
-.flex {
-  display: flex;
 }
 
 .list1,
@@ -344,37 +305,11 @@ ul {
   justify-content: space-between;
 }
 
-/*.text-list1,
-.text-list2 {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}*/
-
-/* .welcome-photo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*justify-content:center; 
-
-}*/
-
-/*.mask {
-  display:flex;
-  flex-direction: row-reverse;
-}*/
 
 .enterteimants {
   display: flex;
 }
 
-/*.icon1,
-.icon2,
-.icon3 {
-  display:flex;
-  align-content: center;
-  justify-content:center;
-}*/
 
 .hausing,
 .food,
@@ -393,12 +328,17 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
 
 
 
 /* reservation.html */
+
+.background-reserv {
+  margin-bottom: -20px;
+}
 
  
 
@@ -407,65 +347,40 @@ ul {
   height: 400px;
 }
 
-/*.amara-list,
-.desert-list,
-.villas-list {
-  width: 1200px;
-  height: 150px;
+
+.conteiner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-}*/
-
-/*.amara-img,
-.desert-img,
-.villas-img {
-  float: right;
-  /*margin: 30px;
-}*/
-
-/*.amara-text,
-.desert-text,
-.villas-text {
-  float: right;
-  padding-right: 530px;
+  flex-wrap: wrap;
 }
-
-.price {
- margin-bottom: 15px;
- margin-top: 15px;
-}
-
-.amara-list {
- margin-right: 74px;
-}*/
-
-/* reservation flex */
-
-/*.hotel-list {
-  width: 1200px;
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-content: flex-start;
-  margin: 0;
-  padding: 0;
-}*/
 
 .hotel-list {
+  width: 1100px;
   list-style: none;
+  min-height: 400px;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .choice {
+  width: 1000px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px;
+  border-bottom-color: #e5e5e5;
 }
+
+.price {
+
+}
+
 
 .footer-reserv {
   display: flex;

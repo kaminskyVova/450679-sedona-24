@@ -339,11 +339,11 @@ ul {
   margin-bottom: 20px;
 }
 
-.conteiner {
+/*.conteiner {
   display: flex;
 }
 
-.wtf {
+/*.wtf {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,10 +365,28 @@ ul {
   align-items: center;
   margin: 30px;
   border-bottom: 1px solid #e5e5e5;
-}
+}*/
 
 .hotel {
   display: flex;
+  border-bottom: .1px solid #cacaca;
+  padding: 28px 6%;
+  justify-content: space-between;
+}
+.hotel__left-column {
+  display: flex;
+}
+
+.hotel__link {
+  display: flex;
+  align-items: center;
+margin-right: 30px;
+}
+
+.info__footer, .info__main {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
 }
 
  .footer-conteiner {
@@ -376,12 +394,12 @@ ul {
  }
 
  .footer-reserv {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  margin: auto;
-  width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  height: 120px;
+  bottom: 0;
+  background-color:#fdfdfd;
  }
 
  .sociale {
@@ -396,6 +414,65 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
+.info__title  {
+  white-space: nowrap;
+  width: 210px;
+  height: 16px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;    
+}
+
+.info__link-btn {
+  display: block;
+  text-align: center;
+  width: 110px;
+  height: 27px;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+}
+
+.info__btn {
+  width: 142px;
+height: 27px;
+color: #ffffff;
+font-family: "PT Sans";
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+text-transform: uppercase;
+background-color: #766357;
+border: none;
+}
+
+.right-column__rate {
+  width: 110px;
+height: 27px;
+background-color: #f2f2f2;
+}
+
+.hotel__info {
+  margin-bottom: 28px;
+}
+
+.right-column {
+  margin-top: 25px;
+}
+
+.right-column__stars {
+  margin-bottom: 35px;
+
+}
+
 
 .sociale-reserv {
   width: 33%;

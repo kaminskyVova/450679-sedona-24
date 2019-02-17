@@ -337,77 +337,68 @@ ul {
 /* reservation.html */
 
 .background-reserv {
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 
- 
+.conteiner {
+  display: flex;
+}
 
 .hotel-list {
+  list-style: none;
+  display: flex;
   width: 1100px;
   height: 400px;
 }
 
-.hotel {
-  padding-bottom: 10px;
-  margin-right: 30px;
-  /*text-align: center;*/
-}
-
-
-.conteiner {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  
-  /*flex-wrap: wrap;*/
-}
-
-.hotel-list {
-  width: 1100px;
-  list-style: none;
-  min-height: 400px;
-  display: flex;
-  /*justify-content: center;
-  align-items: center;
- /* margin: 0 auto; */
-}
 
 .choice {
   width: 1000px;
   display: flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  text-align: center;
+  margin: 30px;
   border-bottom: 1px;
   border-bottom-color: #e5e5e5;
 }
 
-.price {
-
+.hotel {
+  display: flex;
 }
 
 
-.footer-reserv {
+/*.footer-reserv {
   display: flex;
   height: 120px;
   bottom: 0;
   background-color:#fdfdfd;
+ }*/
+
+ .footer-conteiner {
+   display: flex;
  }
 
- .footer-list {
+ .footer-reserv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
   margin: auto;
-  width: 155px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  
  }
 
+ .sociale {
+   display: flex;
+ }
+
+ 
+.sociale-reserv {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+ 
+ }
 
 .visit-reserv {
   width: 370px;

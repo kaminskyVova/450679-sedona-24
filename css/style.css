@@ -14,7 +14,7 @@ body {
 
 h1, h2 {
 	color: #000000;
-	font-family: "PT Sans"; sans-serif;
+	font-family: "PT Sans";
 	font-size: 23px;
 	font-weight: 700;
 	line-height: 36px;
@@ -213,30 +213,18 @@ ul {
 
 
 .visit {
-  width: 370px;
+  width: 33%;
   padding: 50px;
   width: 415px;
   margin-left: 100px;
  }
 
  .academy {
+   width: 33%;
   padding: 50px;
-  margin-left: 130px;
+  margin-left: 130px
  }
 
- 
-.sitesedona {
-  width: 136px;
-  height: 16px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #000000;
-  font-family: "PT Sans";
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
- }
 
  .website {
   width: 197px;
@@ -249,30 +237,40 @@ ul {
   text-transform: uppercase;
  }
 
+
 .footer {
   width: 100%;
 
 }
 
-.footer-sociale {
-  padding-top: 30px;
-  margin: auto;
-  width: 155px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
- }
+.footer-sociale{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.sociale {
-  width: 150px;
-  height: 48px;
- }
+
+.twitter,
+.facebook,
+.youtube {
+  display: block;
+}
 
 .social-button {
+  display: block;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+ }
+
+ .social-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .footer-sociale li {
+   margin-right: 5px;
  }
 
 
@@ -320,6 +318,8 @@ ul {
 
 .footer {
  display: flex; 
+ justify-content: center;
+ align-items: center;
   
 }
 
@@ -328,7 +328,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
 
@@ -342,6 +341,13 @@ ul {
 
 .conteiner {
   display: flex;
+}
+
+.wtf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px 30px 15px;
 }
 
 .hotel-list {
@@ -358,21 +364,12 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin: 30px;
-  border-bottom: 1px;
-  border-bottom-color: #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel {
   display: flex;
 }
-
-
-/*.footer-reserv {
-  display: flex;
-  height: 120px;
-  bottom: 0;
-  background-color:#fdfdfd;
- }*/
 
  .footer-conteiner {
    display: flex;
@@ -385,29 +382,41 @@ ul {
   padding-top: 30px;
   margin: auto;
   width: 100%;
-  
  }
 
  .sociale {
+   width: 33%;
    display: flex;
+   justify-content: center;
+   align-items: center;
  }
 
- 
+ .social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sociale-reserv {
+  width: 33%;
   display: flex;
   justify-content: space-between;
-  margin: auto;
- 
+  align-items: center;
+}
+
+
+ .sociale-reserv li {
+   margin-right: 5px;
  }
 
+
+
 .visit-reserv {
-  width: 370px;
+  width: 33%;
   padding: 50px;
-  width: 415px;
-  margin-left: 100px;
  }
 
  .academy-reserv {
+   width: 33%;
   padding: 50px;
-  margin-right: 100px;
  }

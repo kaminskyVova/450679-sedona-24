@@ -9,7 +9,7 @@ body {
 
 	background-color: #ffffff;
 	background-position: top center;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 h1, h2 {
@@ -57,6 +57,10 @@ ul {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  /*border-right: 30px;
+  border-left: 30px;
+  border-color: #f2f2f2;*/
 }
 
 .main-header {
@@ -83,7 +87,24 @@ ul {
 
 .main-navigation a:active,
 .main-navigation a:focus {
-	color: #b2b2b2;
+  color: #b2b2b2; 
+	
+}
+
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
+.academy svg:hover,
+.academy svg:focus {
+  stroke: #81b3d2; fill: #81b3d2; 
+}
+
+.academy svg:active,
+.academy svg:focus {
+  stroke: #b2b2b2; fill: #b2b2b2;
 }
 
 .logo {
@@ -377,6 +398,10 @@ ul {
   display: flex;
 }
 
+ul.hotels-list {
+  padding-left:  0;
+}
+
 .hotel__link {
   display: flex;
   align-items: center;
@@ -468,11 +493,15 @@ background-color: #f2f2f2;
   margin-top: 25px;
 }
 
-.right-column__stars {
-  margin-bottom: 35px;
 
+
+.info__text {
+  margin-bottom: 17px;
 }
 
+.right-column__stars.stars {
+  margin-bottom: 50px;
+}
 
 .sociale-reserv {
   width: 33%;

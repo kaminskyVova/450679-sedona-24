@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -13,8 +13,8 @@
                 <nav class="main-navigation">
                     <ul class="cite-navigation">
                         <li class="navigation"><a href="info.html">информация</a></li>
-                        <li class="navigation-second"><a href="foto-video.html">фото и видео</a></li>
-                        <li class="navigation-third"><a href="#map">карта штата</a></li>
+                        <li class="navigation"><a href="foto-video.html">фото и видео</a></li>
+                        <li class="navigation"><a href="#map">карта штата</a></li>
                         <li class="navigation"><a href="reservation.html">гостиницы</a></li>
                     </ul>  
                 </nav>
@@ -97,6 +97,7 @@
         <form action="#" method="get">
             <input id="hotel-search" type="submit" value="Поиск гостиниц в Седоне">
         </form>
+        
         <section class="footer-map">
             <div id="map">
                 <img src="img/map.jpg" width="1200" height="594" alt="map">
@@ -109,7 +110,7 @@
             <div class="sociale">
                 <ul class="footer-sociale"> 
                     <li><a class="social-button" href="http://www.twitter.com"> 
-                        <img src="img/twitter.svg" alt="Мы в твитере" width="17" height="15">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#ffffff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
                         </a> 
                     </li>
                     <li><a class="social-button" href="http://www.facebook.com">
@@ -132,31 +133,36 @@
 </html>
 
 <!--Форма-->
-
-<!--<section class="hotels_choice">
-    <div class="window">
-        <form action="#" method="get">
-            <ul class="choice_form">
-                <li class="choice">
-                    <label for="date_in">Дата заезда:</label>
-                    <input id="date_in" value="27 апреля 2017" type="date">
-                </li>
-                <li class="choice">
-                    <label for="date_out">Дата заезда:</label>
-                    <input id="date_out" value="4 июля 2017" type="date">
-                </li>
-                <li class="choice">
-                    <label for="adult">Взрослые:</label>
-                    <input id="adult" value="2" type="number">
-                </li>
-                <li class="choice">
-                    <label for="childrens">Дети:</label>
-                    <input id="childrens" value="0" type="number">
-                </li>
-            </ul>
-            <span class="search">
-                <input tape="submit" value="Найти">
-            </span>
-        </form>
-  </div> 
-</section>-->
+<!--
+<form class="search-form" action="#" method="post" id="hotel-search-form">
+    <div>
+<label for="date_in">Дата заезда:</label>
+<input class="date_in_out" id="date_in" value="27 апреля 2017" type="date">
+  </div>
+  <br>
+  <div>
+    <label for="date_out">Дата заезда:</label>
+<input class="date_in_out" id="date_out" value="27 апреля 2017" type="date">
+  </div>
+  <br>
+  <section>
+    <div>
+    <label for="adult">Взрослые</label>
+<button class="search-select-btn" type="button">Меньше</button>
+    <input class="search-data" type="number" min="1" max="10" name="adult" id="adult" value="2">
+    <button class="search-select-btn" type="button">Больше</button>
+  </section>
+   <br>
+  <li>
+    <label for="child">Дети</label>
+    <button class="search-select-btn" type="button">Меньше</button>
+    <input class="search-data" type="number" min="1" max="10" name="child" id="child" value="4">
+    <button class="search-select-btn" type="button">Больше</button>
+</div>
+  </li>
+   <br>
+  <span>
+    <button class="search-button" type="submit">Найти</button>
+  </span>
+</form>
+-->

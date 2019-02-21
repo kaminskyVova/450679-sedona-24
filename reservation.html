@@ -9,12 +9,13 @@
 </head>
     <body>
         <div class="wrapper">
+        <div class="foto_maunt">
             <header class="main-header">
                 <nav class="main-navigation">
                     <ul class="cite-navigation">
                         <li class="navigation"><a href="info.html">информация</a></li>
-                        <li class="navigation-second"><a href="foto-video.html">фото и видео</a></li>
-                        <li class="navigation-third"><a href="#map">карта штата</a></li>
+                        <li class="navigation"><a href="foto-video.html">фото и видео</a></li>
+                        <li class="navigation"><a href="#map">карта штата</a></li>
                         <li class="navigation"><a href="reservation.html">гостиницы</a></li>
                     </ul>  
                 </nav>
@@ -24,31 +25,40 @@
                     </a>
                 </div>
             </header>
-            <div class="background-reserv">
-                <img src="img/background2.jpg" width="1200" height="500"  alt="filter">
-            </div>
-       <!-- <form class="wide-selection" method="post">
-            <div class="infostructure">
-                   <b>инфраструктура:</b>
-                <input id="pl" type="checkbox" name="бассейн"><label for="pl">Бассейн</label>
-                <input id="par"  type="checkbox" name="парковка"><label for="par">Парковка</label>
-                <input id="wif"  type="checkbox" name="wi-fi"><label for="wif">Wi-Fi</label>
-            </div>                                                  
-            <div class="type housing">
-                    Тип жилья:<br>
-                <input id="htl" type="checkbox" name="гостиница"> <label for="htl">Гостиница</label>
-                <input id="hstl"  type="checkbox" name="отель"> <label for="hstl">мотель</label>
-                <input id="aprt"  type="checkbox" name="апартаменты"><label for="aprt">апартаменты</label>
-            </div>
-        <div class="choice-price">
-            стоимость в сутки(р)<br>
-            <label for="price">от 0 до 3000</label>
-            <input type="range" id="price" name="диапозон цен" min="0" max="3000" step="100"> 
+            <section class="hello-res">
+                <form class="wide-selection" method="post">
+                    <ul class="wtf">
+                        <li class="info">
+                            <span class="text">инфраструктура:</span><br><br>
+                            <input id="pl" type="checkbox" name="бассейн"><label for="pl">Бассейн</label><br><br>
+                            <input id="par"  type="checkbox" name="парковка"><label for="par">Парковка</label><br><br>
+                            <input id="wif"  type="checkbox" name="wi-fi"><label for="wif">Wi-Fi</label>
+                        </li>                                                  
+                        <li class="info">
+                            <span class="text">Тип жилья:</span><br><br>
+                            <input id="htl" type="checkbox" name="гостиница"> <label for="htl">Гостиница</label><br><br>
+                            <input id="hstl"  type="checkbox" name="отель"> <label for="hstl">мотель</label><br><br>
+                            <input id="aprt"  type="checkbox" name="апартаменты"><label for="aprt">апартаменты</label>
+                        </li>
+                        <li class="info">
+                            <span class="text"> стоимость в сутки(р)</span><br><br>
+                            <label for="price"><span class="text_price">от 0 до 3000</span></label><br><br>
+                            <input type="range" id="price" name="диапозон цен" min="0" max="3000" step="100"> <br>
+                            <span><button class="search-button2" type="submit">Найти</button></span>
+                        </li>
+                    </ul>
+                </form>
+                <div class="footer-choice">
+                    <p class="info__title">Найдено:</p>
+                    <span class="separarion">сортировка:</span>
+                    <ul class="separ">
+                    <li><button class="separ-button" type="submit">по цене</button></li>
+                    <li><button class="separ-button_border" type="submit">по типу</li></span>
+                    <li><button class="separ-button_border" type="submit">по рейтингу</li></span>
+                    </ul>
+                </div>
+            </section>
         </div>
-        </form>-->
-           <!-- <div class="separation">
-                 Найдено:
-            </div>-->
             <div class="conteiner">
                 <ul class="hotels-list">
                     <li class="hotel">

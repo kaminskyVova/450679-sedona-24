@@ -1,16 +1,32 @@
 body {
-	font-family: "PT Sans", Arial, sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+	
+	background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  font-family: "PT Sans", Arial, sans-serif;
 	color: #333333;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 26px;
   text-transform: uppercase;
-  
 
-	background-color: #ffffff;
-	background-position: top center;
-  background-repeat: no-repeat;
-}
+
+  width: 1200px;
+  background-color: #ffffff;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  
+ 
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2); 
+  }
+
+
 
 h1, h2 {
 	color: #000000;
@@ -132,14 +148,7 @@ ul {
   width: 150px;
 }
 
-.wrapper {
-  width: 1200px;
-  min-width: 500px;
-  margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-  border-right: 30px solid #f2f2f2;
-  border-left: 30px solid #f2f2f2;
-}
+
 
 /*.main-header {
   margin-bottom: 0 auto;
@@ -408,6 +417,16 @@ svg path {
    margin-right: 5px;
  }
 
+.footer-sociale svg:hover,
+.footer-sociale svg:focus {
+  stroke: #ffffff; fill: #ffffff; 
+}
+
+.footer-sociale svg:active,
+.footer-sociale svg:focus {
+  opacity: 0.3; fill: #87b6d1;
+}
+
 
 
 /* CSS Flexbox */
@@ -463,6 +482,7 @@ svg path {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  fill: white;
 }
 
 
@@ -470,49 +490,61 @@ svg path {
 
 /* reservation.html */
 
-.foto_maunt {
- 
-}
 
 .background-reserv {
   margin-bottom: 20px;
 }
 
-/*.hello-res {
-  position: relative;
-  background: url(../img/background2.jpg) no-repeat;
-}*/
 
 /*форма + фото */
 .wtf {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
   padding: 30px;
-
 }
 
+
 .hello-res {
-  width:1200px;
+  width: 1200px;
   height: 310px;
   position: relative;
   background: url(../img/background2.jpg) no-repeat;
+  background-position: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
+
+/*.info__title:hover,
+.info__title:focus {
+	color: #81b3d2;
+}
+
+.info__title:active,
+.info__title:focus {
+  color: #b2b2b2; 
+	
+}*/
+
+
 .footer-choice {
   display: flex;
-  justify-content: ;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
+}
+
+.separ {
+  padding: 0;
+  padding-right: 50px;
 }
 
 .separ li {
   display: inline;
   margin-left: 30px;
 }
+
 
 .text {
  width: 139px;
@@ -525,6 +557,7 @@ line-height: 21px;
 text-transform: uppercase;
 }
 
+
 .info {
   height: 13px;
   color: #ffffff;
@@ -535,23 +568,45 @@ line-height: 21px;
 text-transform: uppercase;
 }
 
-.text_price {
-  width: 220px;
-height: 32px;
-border: 2px solid #ffffff;
+.info__title {
+  text-align: center;
 }
 
+
+.text_price {
+  width: 314px;
+  height: 32px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price_from,
+.price_to {
+  display: block;
+  width: 155px;
+}
+
+
 .search-button2 {
+display: block;
 width: 133px;
 height: 32px;
 border: 2px solid #ffffff;
+background: none;
+margin-top: 25px;
+
   
+
 color: #ffffff;
 font-family: "PT Sans";
 font-size: 14px;
 font-weight: 400;
-line-height: 21px;  
+line-height: 21px;
+text-transform: uppercase; 
 }
+
 
 .footer-choice {
   position: absolute;
@@ -561,14 +616,135 @@ line-height: 21px;
   background-color: #fefefe;
 }
 
+.separ-button_border {
+  text-decoration: dashed;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.separ-button_border {
+  width: 49px;
+height: 8px;
+color: #b2b2b2;
+font-family: "PT Sans";
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+}
+
+.separ-button_border a:hover,
+.separ-button_border a:focus {
+	color: #81b3d2;
+}
+
+.separ-button_border a:active,
+.separ-button_border a:focus {
+  color: #000000; 
+}
+
+
+
+
+/*кнопки стили*/
+
+input[type="checkbox"] {
+  display:none;
+}
+
+label {
+  padding-left: 20px;
+}
+
+label::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);  
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+
+.separ a {
+  width: 48px;
+  height: 10px;
+  color: #81b3d2;
+  font-family: "PT Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+ 
+.separ a:hover,
+.separ a:focus {
+	color: #92bdd8;
+}
+
+.separ a:active,
+.separ a:focus {
+  color: #b2b2b2; 
+}
+
+ins {
+  text-decoration: 1px dotted #81b3d2;
+}
+
+
+input[type=range] {
+  -webkit-appearance: none; 
+  width: 317px;
+  height: 2px;
+  background: #908280; 
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.triangle li {
+  display: inline;
+}
+
+.triangle_up {
+  margin-right: 15px;
+  fill: #cacaca;
+}
+
+.triangle_down {
+  fill: #cacaca;
+}
+
+
+  
+
+
+	
+
 
 
 /*конец*/
 .hotel {
   display: flex;
   border-bottom: .1px solid #cacaca;
-  padding: 28px 6%;
+  padding: 0 6%;
   justify-content: space-between;
+}
+
+.hotel-list {
+  margin: 0;
 }
 
 .hotel li {

@@ -291,7 +291,9 @@ svg path {
 	height: 86px;
   margin-left: 316px;
   margin-right: 316px;
-	background-color: #766357;
+  background-color: #766357;
+  border: none;
+  cursor: pointer;
 
 	color: #ffffff;
 	font-size: 21px;
@@ -568,9 +570,9 @@ line-height: 21px;
 text-transform: uppercase;
 }
 
-.info__title {
+/*.info__title {
   text-align: center;
-}
+}*/
 
 
 .text_price {
@@ -596,6 +598,7 @@ height: 32px;
 border: 2px solid #ffffff;
 background: none;
 margin-top: 25px;
+cursor: pointer;
 
   
 
@@ -639,6 +642,20 @@ line-height: 18px;
 .separ-button_border a:active,
 .separ-button_border a:focus {
   color: #000000; 
+}
+
+.result {
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 115px;
+height: 22px;
+margin-right: 50px;
+color: #000000;
+font-family: "PT Sans";
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+text-transform: uppercase;
 }
 
 
@@ -725,6 +742,10 @@ input[type=range] {
 
 .triangle_down {
   fill: #cacaca;
+}
+
+.separarion {
+  margin-right: 50px;
 }
 
 
@@ -839,8 +860,10 @@ ul.hotels-list {
 
 .info__title  {
   white-space: nowrap;
+  text-align: start;
   width: 210px;
   height: 16px;
+  padding: 0;
   color: #000000;
   font-family: "PT Sans";
   font-size: 21px;
@@ -850,7 +873,7 @@ ul.hotels-list {
 }
 
 .info__link-btn {
-  display: block;
+  border: none;
   text-align: center;
   width: 110px;
   height: 27px;
@@ -861,6 +884,7 @@ ul.hotels-list {
   line-height: 21px;
   text-transform: uppercase;
   background-color: #81b3d2;
+  cursor: pointer;
 }
 
 .info__btn {
@@ -874,6 +898,7 @@ ul.hotels-list {
   text-transform: uppercase;
   background-color: #766357;
   border: none;
+  cursor: pointer;
 }
 
 .right-column__rate {

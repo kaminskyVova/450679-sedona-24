@@ -33,10 +33,9 @@
             </section>
             <section class="reason1">
                 <div class="taxt-reason1">
-                    <h3>настоящий<br>
-                    городок</h3>
+                    <span class="real_city">настоящий<br>городок</span>
                     <span>-№1-</span>
-                    <p>седона -  не аттракцион для туристов,<br>там течет своя жизнь</p>
+                    <p clss="sedona">седона -  не аттракцион для туристов,<br>там течет своя жизнь</p>
                 </div>
                 <div class="reason1-img"> 
                     <img src="img/photo1.jpg" width="800" height="256" alt="photo1">
@@ -47,17 +46,17 @@
                     <li class="text-list1">
                         <img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
                         <h2>Жилье</h2>
-                        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                        <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
                     </li>
                     <li class="text-list1">
                         <img src="img/icon-2.svg" width="74" height="70" alt="Еда">
                         <h2>Еда</h2>
-                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
                     </li>
                     <li class="text-list1">
                         <img src="img/icon-3.svg" width="64" height="76" alt="Сувениры">
                         <h2>сувениры</h2>
-                        <p>не только китайского, но и местного производства!</p>
+                        <p>не только китайского, но и местного<br> производства!</p>
                     </li> 
                 </ul>
             </section>
@@ -66,45 +65,65 @@
                     <img src="img/photo2.jpg" width="800" height="256" alt="photo2">
                 </div>
                 <div class="reason2-text">
-                    <h3>Там есть<br>мост дьявола</h3>
+                    <sapn class="real_city">Там есть<br>мост дьявола</sapn>
                     <span>-№2-</span> 
-                    <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+                    <p class="sedona">Да, по нему можно пройти! если конечно вы осмелитесь</p>
                 </div>
             </section>
             <section class="enterteimants2">
-            <ul class="list2">
-                <li class="text-list2">
-                    <h2>небольшая<br> площадь</h2>
-                    <b>-№3-</b>
-                    <p>все достопримечательности<br>находятся очень близко</p>
-                </li>
-                <li class="text-list2">
-                    <h2>красивая<br> дорога</h2>
-                    <b>-№4-</b>
-                    <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
-                </li>
-                <li class="text-list2">
-                    <h2>мало<br> туристов</h2>
-                    <b>-№5-</b>
-                    <p>большинство едет в гранд каньон<br>и толпится там</p>
-                </li> 
-            </ul>
+                <ul class="list2">
+                    <li class="text-list2">
+                        <h2>небольшая<br>площадь</h2>
+                        <b>-№3-</b>
+                        <p>все достопримечательности<br>находятся очень близко</p>
+                    </li>
+                    <li class="text-list2">
+                        <h2>красивая<br>дорога</h2>
+                        <b>-№4-</b>
+                        <p>ехать в седону из лас-вегаса совсем<br>не скучно!</p>
+                    </li>
+                    <li class="text-list2">
+                        <h2>мало<br>туристов</h2>
+                        <b>-№5-</b>
+                        <p>большинство едет в гранд каньон<br>и толпится там</p>
+                    </li> 
+                </ul>
             </section>
-        <section class="hello2">
-            <h2 class="interest">заинтересовались?</h2>
-            <p class="common">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </section>    
-        <!--<form action="#" method="get">-->
-            <button id="hotel-search" href="#">Поиск гостиниц в Седоне</button>
-        <!--</form>-->
-        
-        <section class="footer-map">
-            <div id="map">
-                <img src="img/map.jpg" width="1200" height="594" alt="map">
-            </div>
+            <section class="hello2">
+                <h2 class="interest">заинтересовались?</h2>
+                <p class="common">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            </section>    
+            <button id="hotel-search">Поиск гостиниц в Седоне</button>
+            <section class="footer-map" id="map">
+                <form class="search-form" action="#" method="post" id="hotel-search-form">
+                    <div class="date_input_in">
+                        <label for="date_in">Дата заезда:</label>
+                        <input id="date_in" value="27 апреля 2017" type="date">
+                    </div>
+                    <div class="date_input_out">
+                        <label for="date_out">Дата выезда:</label>
+                        <input id="date_out" value="27 апреля 2017" type="date">
+                    </div>
+                    <div class="adult_child">
+                        <span class="adult"><label for="adult">Взрослыe:</label></span>
+                        <div class="button_adult">
+                            <a href="#" class="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3"><g><g transform="translate(-536 -2377)"><image width="12" height="3" transform="translate(536 2377)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAKklEQVQYV2NcsWJFKCMj4yoGIsD////DGFeuXFnOwMDQQYR6kJIKkjUAALVCDTVS+ePFAAAAAElFTkSuQmCC"/></g></g></svg></a>
+                            <input class="search-data" type="number" min="1" max="10" name="adult" id="adult" value="2">
+                            <a href="#" class="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11"><g><g transform="translate(-612 -2373)"><image width="11" height="11" transform="translate(612 2373)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAWElEQVQoU7WQwQ2AMAwDLyPAKrCLZ8wudBU6AohHqxAh9YGaX+JTZNtI4+4HsAFF0h5l+4CvdpP00ifCwWN2lPdi7t49jugHPoFlBAJ1YsC/PbcMVdIan93Tyiy2ITCO8wAAAABJRU5ErkJggg=="/></g></g></svg></a>
+                        </div>
+                        <span class="child"><label for="child">Дети:</label></span>
+                        <div class="button_child">
+                            <a href="#" class="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3"><g><g transform="translate(-536 -2377)"><image width="12" height="3" transform="translate(536 2377)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAKklEQVQYV2NcsWJFKCMj4yoGIsD////DGFeuXFnOwMDQQYR6kJIKkjUAALVCDTVS+ePFAAAAAElFTkSuQmCC"/></g></g></svg></a>
+                            <input class="search-data" type="number" min="1" max="10" name="child" id="child" value="4">
+                            <a href="#" class="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11"><g><g transform="translate(-612 -2373)"><image width="11" height="11" transform="translate(612 2373)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAWElEQVQoU7WQwQ2AMAwDLyPAKrCLZ8wudBU6AohHqxAh9YGaX+JTZNtI4+4HsAFF0h5l+4CvdpP00ifCwWN2lPdi7t49jugHPoFlBAJ1YsC/PbcMVdIan93Tyiy2ITCO8wAAAABJRU5ErkJggg=="/></g></g></svg></a>
+                        </div>
+                    </div>
+                    <button class="search-button" type="submit">Найти</button>
+                </form>
+            
             <footer class="footer">
             <div class="visit">
-                <a class="sedona" href="http://www.sedonaaz.gov">
+                <a class="visit-sedona" href="http://www.sedonaaz.gov">
                 <span class="sitesedona"><b>#visitsedona</b></span></a>
             </div>
             <div class="sociale">
@@ -132,33 +151,3 @@
     </body>                    
 </html>
 
-<!--Форма-->
-<!--
-<form class="search-form" action="#" method="post" id="hotel-search-form">
-    <div>
-<label for="date_in">Дата заезда:</label>
-<input class="date_in_out" id="date_in" value="27 апреля 2017" type="date">
-  </div>
-  <br>
-  <div>
-    <label for="date_out">Дата заезда:</label>
-<input class="date_in_out" id="date_out" value="27 апреля 2017" type="date">
-  </div>
-  <br>
-    <div>
-    <label for="adult">Взрослые</label>
-<button class="search-select-btn" type="button">Меньше</button>
-    <input class="search-data" type="number" min="1" max="10" name="adult" id="adult" value="2">
-    <button class="search-select-btn" type="button">Больше</button>
-   <br>
-    <label for="child">Дети</label>
-    <button class="search-select-btn" type="button">Меньше</button>
-    <input class="search-data" type="number" min="1" max="10" name="child" id="child" value="4">
-    <button class="search-select-btn" type="button">Больше</button>
-</div>
-   <br>
-  <span>
-    <button class="search-button" type="submit">Найти</button>
-  </span>
-</form>
--->

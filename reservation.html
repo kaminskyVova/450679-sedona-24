@@ -14,7 +14,7 @@
                     <ul class="cite-navigation">
                         <li class="navigation"><a href="info.html">информация</a></li>
                         <li class="navigation"><a href="foto-video.html">фото и видео</a></li>
-                        <li class="navigation"><a href="#map">карта штата</a></li>
+                        <li class="navigation"><a href="index.html#map">карта штата</a></li>
                         <li class="navigation"><a href="reservation.html">гостиницы</a></li>
                     </ul>  
                 </nav>
@@ -28,25 +28,25 @@
                 <form class="wide-selection" method="post">
                     <ul class="wtf">
                         <li class="info">
-                            <span class="text">инфраструктура:</span><br><br>
+                            <p class="text">инфраструктура:</p>
                             <input id="pl" type="checkbox" name="бассейн"><label for="pl">Бассейн</label><br><br>
                             <input id="par"  type="checkbox" name="парковка"><label for="par">Парковка</label><br><br>
                             <input id="wif"  type="checkbox" name="wi-fi"><label for="wif">Wi-Fi</label>
                         </li>                                                  
                         <li class="info">
-                            <span class="text">Тип жилья:</span><br><br>
+                            <p class="text">Тип жилья:</p>
                             <input id="htl" type="checkbox" name="гостиница"> <label for="htl">Гостиница</label><br><br>
                             <input id="hstl"  type="checkbox" name="отель"> <label for="hstl">мотель</label><br><br>
                             <input id="aprt"  type="checkbox" name="апартаменты"><label for="aprt">апартаменты</label>
                         </li>
                         <li class="info">
-                            <span class="text"> стоимость в сутки(р)</span><br><br>
+                            <p class="text_day"> стоимость в сутки(р):</p>
                             <div class="text_price">
-                                <span class="price_from">от 0</span>
-                                <span class ="text_to"> до 3000</span>
+                                <p class="price_from">от 0</p>
+                                <p class ="text_to"> до 3000</p>
                             </div>
-                            <input type="range" id="price" name="диапозон цен" min="0" max="3000" step="100"> <br>
-                            <span><button class="search-button2" type="submit">Показать</button></span>
+                            <p class="min_max"><input type="range" id="price" name="диапозон цен" min="0" max="3000" step="100"></p>
+                            <p class="show"><button class="search-button2" type="submit">Показать</button></p>
                         </li>
                     </ul>
                 </form>
@@ -54,9 +54,9 @@
                     <p class="result">Найдено:3</p>
                     <span class="separarion">сортировка:</span>
                     <ul class="separ">
-                    <li><a href="#" class="separ-button">по цене</a></li>
-                    <li><a class="separ-button_border" href="#">по типу</a></li>
-                    <li><a class="separ-button_border" href="#">по рейтингу</a></li>
+                        <li><a href="#" class="separ-button">по цене</a></li>
+                        <li><a class="separ-button_border" href="#">по типу</a></li>
+                        <li><a class="separ-button_border" href="#">по рейтингу</a></li>
                     </ul>
                     <ul class="triangle">
                         <li class="up_down"><span class="triangle_up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></span></li>
@@ -68,11 +68,11 @@
                 <ul class="hotels-list">
                     <li class="hotel">
                         <div class="hotel__left-column">
-                            <a class="hotel__link" href="#">
+                            <div class="hotel__link">
                                 <div class="img__ARS">
-                                        <img src="img/amara.jpg" width="135" height="90" alt="amara">
+                                    <img src="img/amara.jpg" width="135" height="90" alt="amara">
                                 </div>
-                            </a>
+                            </div>
                             <div class="hotel__info">
                                 <div class="info__header">
                                     <p class="info__title">Amara Resort &amp; Spa</p>
@@ -109,11 +109,11 @@
                         </li>
                             <li class="hotel">
                                 <div class="hotel__left-column">
-                                    <a class="hotel__link" href="#">
+                                    <div class="hotel__link">
                                         <div class="img__desert"> 
                                             <img src="img/desert.jpg" width="135" height="90" alt="desert">
                                         </div>
-                                    </a>
+                                    </div>
                                     <div class="hotel__info">
                                         <div class="info__header">
                                             <p class="info__title">Desert Quail Inn</p>
@@ -185,7 +185,7 @@
             <section class="footer-conteiner">
                     <footer class="footer-reserv">
                             <div class="visit-reserv">
-                                <a class="sedona" href="http://www.sedonaaz.gov">
+                                <a class="visit-sedona" href="http://www.sedonaaz.gov">
                                 <span class="sitesedona"><b>#visitsedona</b></span></a>
                             </div>
                             <div class="sociale-reserv">

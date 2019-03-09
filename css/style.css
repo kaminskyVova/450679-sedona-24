@@ -41,6 +41,19 @@ a {
 	color: #000000;
 }
 
+a:link {
+  color: #000;
+}
+
+a:hover {
+  color:#81b3d2
+}
+
+a:active {
+  color: #b2b2b2;
+}
+
+
 p {
 	color: #333333;
 	font-family: "PT Sans", sans-serif;
@@ -82,7 +95,7 @@ ul {
 }
 
 .mein-navigation {
- position: relative; 
+  position: relative; 
 }
 
 .logo {
@@ -148,11 +161,6 @@ ul {
   width: 150px;
 }
 
-
-
-/*.main-header {
-  margin-bottom: 0 auto;
-}*/
 
 .main-navigation {
 	font-size: 14px;
@@ -246,14 +254,36 @@ svg path {
 	color: #ffffff;
 }
 
+.sedona {
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.real_city {
+  display: block;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
 .reason2 {
   margin-bottom: -25px;
 }
 
 .enterteimants,
 .enterteimants2 {
-  margin: 0 auto;
   width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
 .enterteimants2 {
@@ -262,20 +292,12 @@ svg path {
 
 .list1,
 .list2 {
-  width: 1060px;
+  width: 1200px;
   height: 250px;
   text-align: center;
+  padding-left: 0;
 }
 
-.list1 {
-  padding-left: 50px;
-  
-}
-
-.list2 {
-  padding-left: 50px;
-  padding-right: 30px;
-}
 
 .list1 li {
   width: 33%;
@@ -284,6 +306,7 @@ svg path {
 .list2 li {
   width: 33%;
 }
+
 
 
 #hotel-search {
@@ -301,6 +324,126 @@ svg path {
 	line-height: 26px;
 	text-transform: uppercase;
 }
+
+
+/*форма главной */
+
+.search-form {
+  margin-left: 316px;
+  width: 568px;
+  height: 395px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  background: #ffffff;
+
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.date_input_in {
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+
+#date_in {
+  margin-right: 13px;
+}
+
+.date_input_out {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+#date_in,
+#date_out {
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+#date_out {
+  margin-left: 15px;
+}
+
+.adult_child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -20px;
+  margin-right: 53px;
+  margin-bottom: 35px;
+
+}
+
+.button_adult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.button_child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.search-button {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  border: none;
+  margin-left: 60px;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.adult {
+  display: block;
+  margin-left: 20px;
+  padding-left: 60px;
+  padding-bottom: 23px;
+}
+
+.child {
+  display: block;
+  text-align: center;
+  padding-left: 15px;
+  padding-bottom: 23px;
+  margin-right: -10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+
+
+/*конец*/
+
 
 .detail {
 	background-color: #81b3d2;
@@ -326,11 +469,14 @@ svg path {
 }
 
 .footer-map {
+  width: 1200px;
+  height: 594px;
   position: relative;
+  background-image: url(../img/map.jpg)
  }
 
  .footer {
-   text-align: center;
+  text-align: center;
   height: 120px;
   position: absolute;
   bottom: 0;
@@ -339,8 +485,10 @@ svg path {
  }
 
  .sociale {
-   width: 33%;
-   margin-right: 80px;
+  width: 33%;
+  margin-top: 20px;
+  margin-right: 70px;
+  margin-left: 50px;
  }
 
 
@@ -355,16 +503,17 @@ svg path {
   text-transform: uppercase;
  }
 
- .academy {
+.academy {
   display: flex;
   text-align: center;
   width: 33%;
   padding: 0;
   margin-top: 25px;
+  margin-right: -60px;
  }
 
 
- .website {
+.website {
   width: 33%;
   display: block;
   width: 81px;
@@ -379,8 +528,8 @@ svg path {
   overflow: hidden;
  }
 
- .htmlacademy {
-   width: 115px;
+.htmlacademy {
+  width: 115px;
  }
 
 
@@ -393,6 +542,8 @@ svg path {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
+  padding-right: 27px;
 }
 
 
@@ -409,14 +560,14 @@ svg path {
   background-color: #81b3d2;
  }
 
- .social-button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
- .footer-sociale li {
-   margin-right: 5px;
+.footer-sociale li {
+  margin-right: 5px;
  }
 
 .footer-sociale svg:hover,
@@ -505,7 +656,7 @@ svg path {
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  padding: 30px;
+  padding: 0;
 }
 
 
@@ -517,18 +668,6 @@ svg path {
   background-position: center;
   border-bottom: 1px solid #e5e5e5;
 }
-
-
-/*.info__title:hover,
-.info__title:focus {
-	color: #81b3d2;
-}
-
-.info__title:active,
-.info__title:focus {
-  color: #b2b2b2; 
-	
-}*/
 
 
 .footer-choice {
@@ -549,30 +688,48 @@ svg path {
 
 
 .text {
- width: 139px;
-height: 13px;
-color: #ffffff;
-font-family: "PT Sans";
-font-size: 16px;
-font-weight: 700;
-line-height: 21px;
-text-transform: uppercase;
+  width: 180px;
+  margin-bottom: 30px;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 
 .info {
-  height: 13px;
+  font-size: 14px;
   color: #ffffff;
-font-family: "PT Sans";
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-transform: uppercase;
+  text-align: left;
+  font-family: "PT Sans";
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
-/*.info__title {
-  text-align: center;
-}*/
+.info:nth-child(1) {
+  margin-left: -45px;
+}
+
+.info:nth-child(2) {
+  margin-left: -200px;
+}
+
+
+.text_day {
+  padding-top: 15px;
+  color: #fff;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
 
 
 .text_price {
@@ -582,32 +739,47 @@ text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-.price_from,
-.price_to {
+.price_from {
   display: block;
   width: 155px;
+  color: #fff;
+  font-family: "PT Sans";
+  font-size: 16px
+}
+
+
+.price_to {
+  width: 155px;
+  color: #fff;
+  font-family: "PT Sans";
+  font-size: 16px
 }
 
 
 .search-button2 {
-display: block;
-width: 133px;
-height: 32px;
-border: 2px solid #ffffff;
-background: none;
-margin-top: 25px;
-cursor: pointer;
+  width: 133px;
+  height: 32px;
+  border: 2px solid #ffffff;
+  background: none;
+  margin-top: 25px;
+  cursor: pointer;
 
   
 
-color: #ffffff;
-font-family: "PT Sans";
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-transform: uppercase; 
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase; 
+}
+
+.show {
+  text-align: center;
+  margin-top: -15px;
 }
 
 
@@ -626,12 +798,12 @@ text-transform: uppercase;
 
 .separ-button_border {
   width: 49px;
-height: 8px;
-color: #b2b2b2;
-font-family: "PT Sans";
-font-size: 12px;
-font-weight: 400;
-line-height: 18px;
+  height: 8px;
+  color: #b2b2b2;
+  font-family: "PT Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .separ-button_border a:hover,
@@ -648,14 +820,14 @@ line-height: 18px;
   margin-top: 30px;
   margin-left: 50px;
   width: 115px;
-height: 22px;
-margin-right: 50px;
-color: #000000;
-font-family: "PT Sans";
-font-size: 21px;
-font-weight: 700;
-line-height: 26px;
-text-transform: uppercase;
+  height: 22px;
+  margin-right: 50px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 
@@ -669,6 +841,7 @@ input[type="checkbox"] {
 
 label {
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 label::before {
@@ -727,7 +900,7 @@ input[type=range] {
   position: absolute;
   right: 0;
   margin-right: 50px;
-  margin-top: 25px;
+  margin-top: 30px;
   padding: 0;
 }
 
@@ -749,14 +922,9 @@ input[type=range] {
 }
 
 
-  
-
-
-	
-
-
-
 /*конец*/
+
+
 .hotel {
   display: flex;
   border-bottom: .1px solid #cacaca;
@@ -797,17 +965,17 @@ ul.hotels-list {
   justify-content: center;
  }
 
- .footer-reserv {
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    bottom: 0;
-    background-color:#fdfdfd;
+.footer-reserv {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  bottom: 0;
+  background-color:#fdfdfd;
  }
 
- .visit-reserv {
+.visit-reserv {
   width: 33%;
   margin-left: 60px;
   padding-left: 50px;
@@ -818,16 +986,16 @@ ul.hotels-list {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-   }
+}
 
- .sociale {
+.sociale {
    width: 33%;
    display: flex;
    justify-content: center;
    align-items: center;
  }
 
- .social-button {
+.social-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -946,116 +1114,5 @@ path {
 }
 
 
- /*форма главной*/
- 
- /*.search-form { 
-  width: 568px;
-  height: 395px;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-    
-  width: 91px;
-  height: 12px;
-  color: #000000;
-  font-family: "PT Sans";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-    
-    
-    
-    list-style: none;
-    position: absolute;
-    top: 0; right: 0; left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 570px;
-    min-height: 395px;
-    background-color: #fff;
-  }
-  
-  .date_in_out {
-    width: 346px;
-    height: 38px;
-    background-color: #f2f2f2;
-    border: none; 
-  }
-  
-  .search-data {
-    background-color: #f2f2f2;
-    border: none;
-  }
-  
-  .search-button {
-  border: none;
-  width: 458px;
-  height: 58px;
-  background-color: #81b3d2;
-    
-  color: #ffffff;
-  font-family: "PT Sans";
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;  
-  } */
-
-
-  /*Форма второй */
-  /*
-  .wtf {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding: 30px;
-  }
-  
-  .hello-res {
-    width: 770px;
-    height: 350px;
-    background-color: yellow;
-  }
-  
-  .text {
-   width: 139px;
-  height: 13px;
-  color: #ffffff;
-  font-family: "PT Sans";
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-  text-transform: uppercase;
-  }
-  
-  .info {
-    height: 13px;
-    color: #ffffff;
-  font-family: "PT Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase;
-  }
-  
-  .text_price {
-    width: 220px;
-  height: 32px;
-  border: 2px solid #ffffff;
-  }
-  
-  .search-button2 {
-  width: 133px;
-  height: 32px;
-  border: 2px solid #ffffff;
-    
-  color: #ffffff;
-  font-family: "PT Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;  
-  }*/
-  
   
   

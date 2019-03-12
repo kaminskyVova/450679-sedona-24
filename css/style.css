@@ -53,6 +53,10 @@ a:active {
   color: #b2b2b2;
 }
 
+a:checked {
+  color: #b2b2b2;
+}
+
 
 p {
 	color: #333333;
@@ -544,7 +548,6 @@ color:#847870;
   width: 1200px;
   height: 594px;
   position: relative;
-  background-image: url(../img/map.jpg)
  }
 
  .footer {
@@ -773,6 +776,10 @@ color:#847870;
   white-space: nowrap;
 }
 
+.text_to {
+  color: #fff;
+}
+
 
 .info {
   font-size: 14px;
@@ -839,14 +846,24 @@ color:#847870;
   margin-top: 25px;
   cursor: pointer;
 
-  
-
   color: #ffffff;
   font-family: "PT Sans";
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase; 
+}
+
+.search-button2:hover,
+.search-button2:focus {
+  background: #ffffff;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+
 }
 
 .show {

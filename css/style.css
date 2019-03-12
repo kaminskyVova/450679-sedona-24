@@ -309,14 +309,16 @@ svg path {
 
 
 
-#hotel-search {
+.hotel-search {
 	width: 568px;
 	height: 86px;
   margin-left: 316px;
   margin-right: 316px;
   background-color: #766357;
   border: none;
+  outline: none;
   cursor: pointer;
+  
 
 	color: #ffffff;
 	font-size: 21px;
@@ -325,15 +327,34 @@ svg path {
 	text-transform: uppercase;
 }
 
+.hotel-search:focus {
+  background-color: #604e43;
+}
+
+.hotel-search:active {
+background: #503e33;
+color:#847870;
+}
+
 
 /*форма главной */
 
 .search-form {
-  margin-left: 316px;
+  position: absolute;
+  text-align: center;
+  left: 391px;
+  top: 2247px;
   width: 568px;
   height: 395px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   background: #ffffff;
+
+
+  /*display: none;
+  pointer-events: none;
+  z-index: 1;
+  overflow: auto;*/
+
 
   color: #000000;
   font-family: "PT Sans";
@@ -341,7 +362,18 @@ svg path {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  
 }
+
+.modal_conteiner {
+  width: 500px;
+  height: 285px;
+  text-align: center;
+  white-space: nowrap;
+  
+}
+
+
 
 .date_input_in {
   padding-top: 50px;
@@ -354,21 +386,39 @@ svg path {
 
 .date_input_out {
   margin-bottom: 25px;
-  text-align: left;
 }
 
 #date_in,
 #date_out {
-  width: 346px;
+  width: 60%;
   height: 38px;
   background-color: #f2f2f2;
   margin-left: 20px;
+  padding-left: 10px;
   border: none;
   cursor: pointer;
+
+  
+
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 
   background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 10px center;
+}
+
+#date_in svg:hover,
+#date_in svg:focus {
+   fill: #a9a9a9; 
+}
+
+#date_in svg:active,
+#date_in svg:focus {
+   fill: #87b6d1;
 }
 
 #date_out {
@@ -377,31 +427,46 @@ svg path {
 
 .adult_child {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  margin-left: 47px;
+  margin-bottom: 50px;
+}
 
-  margin-top: -20px;
-  margin-right: 53px;
-  margin-bottom: 35px;
 
+.button {
+  border: none;
+}
+
+.number_of {
+  width: 36px;
+  height: 36px;
+  background-color: #f2f2f2;
+  border: none;
+  text-align: center;
+
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .button_adult {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
 }
 
 .button_child {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 15px;
 }
 
 .search-button {
-  width: 458px;
+  width: 90%;
   height: 58px;
   background-color: #81b3d2;
   border: none;
@@ -416,19 +481,24 @@ svg path {
   text-transform: uppercase;
 }
 
+
+.search-button:focus {
+  background-color: #669ec0;
+}
+
+.search-button:active {
+  background: #5496bd;
+  color:#87b6d1;
+}
+
 .adult {
   display: block;
-  margin-left: 20px;
-  padding-left: 60px;
-  padding-bottom: 23px;
+  margin-right: 40px;
 }
 
 .child {
   display: block;
   text-align: center;
-  padding-left: 15px;
-  padding-bottom: 23px;
-  margin-right: -10px;
 }
 
 .button {
@@ -439,6 +509,8 @@ svg path {
   height: 38px;
   background-color: #f2f2f2;
 }
+
+
 
 
 
